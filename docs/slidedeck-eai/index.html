@@ -1,0 +1,194 @@
+<!--
+slidedeck: A modification of the Google IO 2012 HTML5 slide template
+URL: https://github.com/rmcgibbo/slidedeck
+
+Based on https://github.com/francescolaffi/elastic-google-io-slides, and
+ultimately:
+
+Google IO 2012 HTML5 Slide Template
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Everyday AI</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="shortcut icon" href=" <img src="https://www.python.org/favicon.ico"/>"/> 
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/custom.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+  <!-- MathJax support  -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    showProcessingMessages: false,
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+<slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+
+    <h1> Everyday AI</h1>
+    <h2> PyCon 2015, Montreal<br/> <i><small>April 7, 2015</small></i></h2>
+    <p> <a href="https://hobson.github.io/pycon2015-everyday-ai">hobson.github.io/pycon2015-everyday-ai</a></p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2>Audience Survey</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>Who has built a webapp before?</li>
+<li>Who has used regular expressions?</li>
+<li>Who has used fuzzy text matching?</li>
+<li>Who has built a chat bot before? </li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Where Else Does Will Live?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>GreenKahuna used to employ will to develop software for the contracting industry</li>
+<li>I use a customized version GoodBot at SharpLabs to collaborate with other devlopers on our BigData project.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Some packages you should get to know</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>In addition to <code>will</code> we'll be using the following packages to make sense of the gibberish flowing in typical chatroom</p>
+<ul>
+<li><code>NTLK</code> for text parsing and Part of Speech tagging</li>
+<li><code>pug</code> with <code>fuzzywuzzy</code> and <code>regex</code> for fuzzy string matching</li>
+<li><code>pug</code> with dateutils for parsing of natural language datetimes like "next Monday"</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Architecture of your bot</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>select some open-source plugins appropriate for you application</li>
+<li>start a new plugin that accomplishes something simple but useful</li>
+<li>add fuzziness to your bot logic to imrpove robustness and unpredictability</li>
+<li>add statefulness (a persistent database) to give <code>willbot</code> some long term memory</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Existing plugins can handle the following dialog</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>recurring reminders for future network or server maintenance tasks</p>
+<p>"@ChatBot: Remind me to check on server xyz every Monday morning."</p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>If you'd like a search-engine embedded in your chat room</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>help finding python libraries and pypi packages: </p>
+<p>"@ChatBot: Is there a pypi package or github repository that implements a physics engine?"</p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Wrap up and credits to open source projects</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>A big thanks to the vibrant <a href="github.com/skoczen/will">will</a> community</li>
+</ul></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <!-- <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside> -->
+  <article class="flexbox vleft auto-fadein">
+    <h2></h2>
+    <p> A big shout out to Steven Skoczen and his awesome bot framework</p>
+  </article>
+  <p data-config-contact class="auto-fadein"> <a href="http://github.com/skoczen/will">will</a></p>
+  </p>
+</slide>
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

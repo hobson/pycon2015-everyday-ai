@@ -1,39 +1,29 @@
 
-This is our bot, a [https://github.com/skoczen/will](will) bot.
+willbot
+-------
+
+The easiest way to install willbot is with pip:
+
+    pip install https://github.com/hobson/pycon2015-everyday-ai.git#egg=eai-master
+
+But if you really want to have some fun, you probably want to put the source code somewhere more easily hacked on than your virtualenv or system folders:
+
+    git clone https://github.com/hobson/pycon2015-everyday-ai.git
 
 
-Verifying environment...
-ERROR: WILL_USERNAME... missing!
-  To obtain a WILL_USERNAME: 
-  1. Go to hipchat, and create a new user for will.
-  2. Log into will, and go to Account settings>XMPP/Jabber Info.
-  3. On that page, the 'Jabber ID' is the value you want to use.
-  
-  To set your WILL_USERNAME:
-  1. On your local machine, add this to your virtual environment's bin/postactivate file:
-     export WILL_USERNAME=YOUR_ACTUAL_WILL_USERNAME
-  2. If you've deployed will on heroku, run
-     heroku config:set WILL_USERNAME=YOUR_ACTUAL_WILL_USERNAME
-  
-ERROR: WILL_PASSWORD... missing!
-  To obtain a WILL_PASSWORD: 
-  1. Go to hipchat, and create a new user for will.  Note that password - this is the value you want.  It's used for signing in via XMPP.
-  
-  To set your WILL_PASSWORD:
-  1. On your local machine, add this to your virtual environment's bin/postactivate file:
-     export WILL_PASSWORD=YOUR_ACTUAL_WILL_PASSWORD
-  2. If you've deployed will on heroku, run
-     heroku config:set WILL_PASSWORD=YOUR_ACTUAL_WILL_PASSWORD
-  
-ERROR: WILL_V2_TOKEN... missing!
-  To obtain a WILL_V2_TOKEN: 
-  1. Log into hipchat using will's user.
-  2. Go to https://your-org.hipchat.com/account/api
-  3. Create a token.
-  4. Copy the value - this is the WILL_V2_TOKEN.
-  
-  To set your WILL_V2_TOKEN:
-  1. On your local machine, add this to your virtual environment's bin/postactivate file:
-     export WILL_V2_TOKEN=YOUR_ACTUAL_WILL_V2_TOKEN
-  2. If you've deployed will on heroku, run
-     heroku config:set WILL_V2_TOKEN=YOUR_ACTUAL_WILL_V2_TOKEN
+This instantiation of `will` called `willbot` was developed for the PyCon 2015 talk entitled "Everyday AI", because willbot will be watch out for you every day and night, if you wish. The bot here is progeny of the AI-assisted mind of Steven Skoczen and his community of developers on the [will project](https://github.com/skoczen/will). Building a chatbot using will is so easy, you might almost call it self-replication.
+
+If you want to use this willbot (or some frakenstein version of him that you've coded up here) you'll need to configure some environment variables. The key ones are:
+
+`WILL_USERNAME` and `WILL_PASSWORD`
+
+If you'd like willbot to keep you company in a HipChat room, he'll need an account there. Create a new user and find it's XMPP/Jabber ID under Account settings. The `Jabber ID` is the WILL_USERNAME and the password you selected is the WILL_PASSWORD
+
+You'll also need to set the variable
+
+`WILL_V2_TOKEN`
+
+This allows willbot to find your room within your organization (even if it's just your personal account) and see when you're around. You can find the WILL_V2_TOKEN at `https://<your-org>.hipchat.com/account/api`
+
+Ideally, all 3 of these environment variables should be set in your virtualenv postactivate script that is run just before you issue the `python run_will.py` command from the commandline.
+
