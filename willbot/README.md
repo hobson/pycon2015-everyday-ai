@@ -2,16 +2,22 @@
 willbot
 -------
 
-The easiest way to install willbot is with pip:
+This instantiation of `will` called `willbot` was developed for the PyCon 2015 talk entitled "Everyday AI". The title comes from the fact that you'll probably want to interract with your version of `willbot` nearly every day. It'll watch out for you every day and night, if you wish. This `will` is the brain-child of the AI-assisted mind of Steven Skoczen and his community of developers on the [will project](https://github.com/skoczen/will). Their documentation is so good it could be called poetic, so I won't duplicate it here. And `will` is so easy to deploy and train, you might almost call it self-replicating (I'm sure the `will` team is working on that feature too).
+
+Installation
+============
+
+If you just want to *use* willbot, and you know how to use `pip`:
 
     pip install https://github.com/hobson/pycon2015-everyday-ai.git#egg=eai-master
 
-But if you really want to have some fun, you probably want to put the source code somewhere more easily hacked on than your virtualenv or system folders:
+But if you really want to have some fun, you'll want to put the source code somewhere more easily hacked up:
 
     git clone https://github.com/hobson/pycon2015-everyday-ai.git
 
 
-This instantiation of `will` called `willbot` was developed for the PyCon 2015 talk entitled "Everyday AI", because willbot will be watch out for you every day and night, if you wish. The bot here is progeny of the AI-assisted mind of Steven Skoczen and his community of developers on the [will project](https://github.com/skoczen/will). Building a chatbot using will is so easy, you might almost call it self-replication.
+Quick Start
+===========
 
 If you want to use this willbot (or some frakenstein version of him that you've coded up here) you'll need to configure some environment variables. The key ones are:
 
