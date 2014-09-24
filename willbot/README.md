@@ -7,7 +7,7 @@ This instantiation of [`will`](https://github.com/skoczen/will), called `willbot
 Installation
 ------------
 
-If you just want to *use* willbot, and you know how to use `pip`:
+If you just want to *use* willbot, and you like `pip` (don't we all?!):
 
     pip install https://github.com/hobson/pycon2015-everyday-ai.git#egg=eai-master
 
