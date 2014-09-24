@@ -2,7 +2,7 @@
 willbot
 =======
 
-This instantiation of `will` called `willbot` was developed for the PyCon 2015 talk entitled "Everyday AI". The title comes from the fact that you'll probably want to interract with your version of `willbot` nearly every day. It'll watch out for you every day and night, if you wish. This `will` is the brain-child of the AI-assisted mind of Steven Skoczen and his community of developers on the [will project](https://github.com/skoczen/will). Their documentation is so good it could be called poetic, so I won't duplicate it here. And `will` is so easy to deploy and train, you might almost call it self-replicating (I'm sure the `will` team is working on that feature too).
+This instantiation of [`will`](https://github.com/skoczen/will), called `willbot`, was developed for the PyCon 2015 talk entitled "*Everyday* AI". The talk's title comes from the fact that you'll probably want to interract with your version of `willbot` nearly *every day*. This `will` is the brain-child of the AI-assisted mind of Steven Skoczen and his community of developers on the [will project](https://github.com/skoczen/will). Their documentation is so good it could be called poetic, so I won't duplicate it here. And `will` is so easy to deploy and train, you might almost call it self-replicating (I'm sure the `will` team is working on that feature too).
 
 Installation
 ------------
