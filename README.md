@@ -1,9 +1,13 @@
-pycon2015-everyday-ai
-=====================
+Pycon 2015 -- Everyday AI
+=========================
 
-Pycon 2015 Talk on Implementing Simple But Useful Chat Bot AI Agent
+A simple artificial intelligence approach for everyday use.
 
-This repository contains both the [talk slides](http://github.com/hobson/pycon2015-everyday-ai/docs/slidedeck) and supporting material as well as a pip-installable python package of the [s]oftware that gives `willbot` life](http://github.com/hosbon/ycon2015-everyday-ai/willbot).
+This repository contains 
+
+* The [talk slides](http://github.com/hobson/pycon2015-everyday-ai/docs/slidedeck) 
+* Supporting material and references
+* A pip-installable pypi package of the [s]oftware that helps `willbot` think](http://github.com/hosbon/pycon2015-everyday-ai/willbot).
 
 willbot
 -------
